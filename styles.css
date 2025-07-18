@@ -91,3 +91,49 @@ body{
     border-radius: 8px;
     display: block; /* since img is inline element, it may have some unwanted whitesapce. So display:block will remove any unwanted whitesapce*/
 }
+
+
+/* Second-section */
+.second-section{
+    text-align: center;
+    margin: 80px auto;
+}
+
+.second-section h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+    flex-wrap: wrap; /*to prevent cards staying in same line when viewport shrinks*/
+}
+
+.card{
+    max-width: 150px;
+}
+
+.blue-box{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* If device screen is less then 500px, then apply the below rule for card*/
+@media (max-width: 500px) {
+    .card{
+        max-width: 100%; /* Each card will strech to max parent size(150px) to show only 1card per line for small screen device*/
+        margin: 10px auto; /* Center align if needed */
+        display: flex;   /* Enable Flexbox in a card */
+        flex-direction: column;  /* Stack blue-box and text vertically */
+        align-items: center;  /* Center blue-box horizontally */
+    }
+}
+
+
