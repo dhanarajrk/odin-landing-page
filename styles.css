@@ -137,3 +137,28 @@ body{
 }
 
 
+/*Third section */
+.third-section{
+    background-color: #E5E7EB;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.quote-text{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto; /* Center quote text*/
+}
+
+.quote-author {
+    font-weight: 700;
+    color: #1F2937;
+    text-align: right;
+    max-width: 800px;  /* Same as quote-text */
+    margin: 20px auto 0; /*top right+left bottom */
+}
+
+
