@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', serif;
+}
+
+.first-section {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%; /*top-bot:20px ; left-right:10% */
+}
+
+#header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.right-navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-link{
+    font-size: 18px;
+    color: #E5E7EB;
+    cursor: pointer;
+}
+
+/* Hero Content */
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    gap: 40px; /* gap is spacing between the innermost sibling elements ie between content-left and content-right */
+}
+
+.content-left{
+    flex: 1;  /* take 50% left flex space */
+}
+
+.content-left h1{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.content-left p{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.content-left button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Right (Image) */
+.content-right {
+    flex: 1; /* take 50% right flex space */
+    /* by default img will align on top-left in flex without these below properties. But for this project much changes can't be seen so its safe to remove it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* since img is inline element, it may have some unwanted whitesapce. So display:block will remove any unwanted whitesapce*/
+}
